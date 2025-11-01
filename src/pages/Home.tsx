@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Search, FileText, Users, Package } from "lucide-react";
+import { Search, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 
@@ -13,7 +13,7 @@ const Home = () => {
         <section className="relative overflow-hidden bg-gradient-to-b from-background to-primary/5 pt-20 pb-32">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-              <div className="flex-1 text-center lg:text-left animate-fade-in">
+              <div className="flex-1 text-center lg:text-left animate-fade-in max-w-3xl mx-auto">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                   Reunite with Your
                   <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -39,36 +39,6 @@ const Home = () => {
                       Report an Item
                     </Link>
                   </Button>
-                </div>
-              </div>
-              
-              <div className="flex-1 grid grid-cols-2 gap-4 max-w-md lg:max-w-lg animate-slide-up">
-                <div className="col-span-2 bg-card rounded-2xl p-8 shadow-lg border">
-                  <div className="flex items-center gap-4 mb-2">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Package className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold">500+</div>
-                      <div className="text-sm text-muted-foreground">Items Reported</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-card rounded-2xl p-6 shadow-lg border">
-                  <div className="p-3 bg-accent/10 rounded-lg w-fit mb-3">
-                    <Users className="h-5 w-5 text-accent" />
-                  </div>
-                  <div className="text-2xl font-bold mb-1">300+</div>
-                  <div className="text-xs text-muted-foreground">Active Users</div>
-                </div>
-                
-                <div className="bg-card rounded-2xl p-6 shadow-lg border">
-                  <div className="p-3 bg-primary/10 rounded-lg w-fit mb-3">
-                    <Search className="h-5 w-5 text-primary" />
-                  </div>
-                  <div className="text-2xl font-bold mb-1">150+</div>
-                  <div className="text-xs text-muted-foreground">Items Reunited</div>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@
 
 ## Project info
 
-**URL**: https://preview--lost-n-found-fairytale.lovable.app/
+**URL**: https://lost-n-found-fairytale.lovable.app
 
 **Use your preferred IDE**
 
